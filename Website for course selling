@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Sales Website</title>
+    <!-- Add your CSS links for styling here -->
+    <link rel="stylesheet" href="styles.css">
+
+
+    
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #3498db, #e74c3c);
+            background-image: url("https://www.bing.com/ck/a?!&&p=3ba18b9dfd4a23d7JmltdHM9MTY5NTk0NTYwMCZpZ3VpZD0zNjI3ZmI5Ny1jZTRmLTY5MzItMTBmZC1lOTNlY2Y0OTY4NTgmaW5zaWQ9NTUyNQ&ptn=3&hsh=3&fclid=3627fb97-ce4f-6932-10fd-e93ecf496858&u=a1L2ltYWdlcy9zZWFyY2g_cT1jaGVtJmlkPUQ0ODM0RTU0MDdDREY5NTI1QzkwMDc1OUYzMjE0NzA4NkRCRUJCNjYmRk9STT1JUUZSQkE&ntb=1.gif")
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            animation: gradient 15s infinite;
+            
+            
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        header {
+            background-color: #333;
+            background-image: linear-gradient(135deg, #3498db, #e74c3c);
+            background-size: 200% 200%;
+            animation: gradient 15s infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Social Media Links */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Testimonials Section */
+        #testimonials {
+            background-color: #f8f8f8;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .testimonial {
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+        }
+
+        .testimonial img {
+            width: 80px;
+            border-radius: 50%;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            position: relative; /* Add position relative to create space for the animation */
+            transition: color 0.3s; /* Add transition for smooth color change */
+        }
+
+        nav ul li a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            transition: width 0.3s; /* Add transition for width change */
+        }
+
+        nav ul li a:hover {
+            color: #ff5733; /* Change color on hover */
+        }
+
+        nav ul li a:hover::after {
+            width: 100%; /* Expand the underline on hover */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #hero {
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        #hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        section {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            background-color: #ff5733;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #ff814f;
+        }
+
+        #courses {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .course {
+            background-color: rgba(211, 197, 86, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .course img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .course h3 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .course p {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        .course {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        #about, #contact {
+            background-color: #f8f8f8;
+            padding: 3rem 0;
+            text-align: center;
+            background-color: url("https://www.bing.com/ck/a?!&&p=3ba18b9dfd4a23d7JmltdHM9MTY5NTk0NTYwMCZpZ3VpZD0zNjI3ZmI5Ny1jZTRmLTY5MzItMTBmZC1lOTNlY2Y0OTY4NTgmaW5zaWQ9NTUyNQ&ptn=3&hsh=3&fclid=3627fb97-ce4f-6932-10fd-e93ecf496858&u=a1L2ltYWdlcy9zZWFyY2g_cT1jaGVtJmlkPUQ0ODM0RTU0MDdDREY5NTI1QzkwMDc1OUYzMjE0NzA4NkRCRUJCNjYmRk9STT1JUUZSQkE&ntb=1.gif");
+            
+        }
+
+        footer {
+            background-color: #e9e9e9;
+            color: #cd5050;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+    </head>
+
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="123456.html">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    
+    
+        <nav>
+            <!-- Your navigation links here -->
+        </nav>
+        <div class="social-icons">
+            <!-- Add your social media links here -->
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+    </header>
+
+    <!-- Your existing sections and content here -->
+
+    <section id="testimonials">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial">
+            <img src="student1.jpg" alt="Student 1">
+            <p>"This course transformed my understanding of the subject. Highly recommended!"</p>
+            <p>- John Doe</p>
+        </div>
+        <div class="testimonial">
+            <img src="student2.jpg" alt="Student 2">
+            <p>"The instructors are incredibly knowledgeable, and the content is top-notch."</p>
+            <p>- Jane Smith</p>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </section>
+
+    
+
+    
+
+<section id="courses">
+    <h2>Featured Courses</h2>
+    <div class="course">
+        <img src="https://www.bing.com/ck/a?!&&p=d568f8b8e5019482JmltdHM9MTY5NTk0NTYwMCZpZ3VpZD0zNjI3ZmI5Ny1jZTRmLTY5MzItMTBmZC1lOTNlY2Y0OTY4NTgmaW5zaWQ9NTY1NA&ptn=3&hsh=3&fclid=3627fb97-ce4f-6932-10fd-e93ecf496858&u=a1L2ltYWdlcy9zZWFyY2g_cT1jaGVtaXN0cnkgaW1hZ2UmRk9STT1JUUZSQkEmaWQ9NjZERUI1MDcyQUVFRURGMEI5RjMzRUM0RkY3MDNFMDhEQ0NEMkQzRQ&ntb=1.jpg" alt="Course 1">
+        <h3>Chemistry quest</h3>
+        <p>This course is to make your concepts strong in chemistry and will also help you to analyze speed by attemping MCQ's </p>
+        <p>Price:99</p>
+        <a href="#" class="btn">Enroll</a>
+    </div>
+    <div class="course">
+        <img src="course2.jpg" alt="Course 2">
+        <h3>Physics Quest</h3>
+        <p>This course is to make your Brain strong in Physics Concepts  and will also help you to analyze your speed by attemping MCQ's </p>
+        <p>Price:99</p>
+        <a href="#" class="btn">Enroll</a>
+    </div>
+
+    
+    <div class="course">
+        <img src="course3.jpg" alt="Course 3">
+        <h3>Maths quest</h3>
+        <p>This course is to make your Brain strong in Maths Concepts  and will also help you to analyze your speed by attemping MCQ's</p>
+        <p>Price:99</p>
+        <a href="#" class="btn">Enroll</a>
+    </div>
+    <div class="course">
+        <img src="course4.jpg" alt="Course 4">
+        <h3>Biology quest</h3>
+        <p>This course is to make your Brain strong in Biology Concepts  and will also help you to analyze your speed by attemping MCQ's</p>
+        <p>Price:99</p>
+        <a href="#" class="btn">Enroll</a>
+    </div>
+    <div class="course">
+        <img src="course5.jpg" alt="Course 5">
+        <h3>Grand master</h3>
+        <p>This course is to make your Brain strong in All subjects Concepts and will also help you to analyze speed by attemping MCQ's</p>
+        <p>Price:149</p>
+        <a href="gm course.html" class="btn">Enroll</a>
+    </div>
+    <div class="course">
+        <img src="course6.jpg" alt="Course 6">
+        <h3>Lst's Crack it</h3>
+        <p>This course is to make your Brain so strong in pereparation and will also help you to analyze speed by attemping MCQ's</p>
+        <p>Price: 200</p>
+        <a href="#" class="btn">Enroll</a>
+    </div>
+</section>
+
+
+
+
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to our Course Platform! We are a team of passionate educators committed to providing high-quality online courses to help you achieve your goals.</p>
+    <p>Meet Aditya Gupta, one of our outstanding instructors:</p>
+    <div class="instructor">
+        <img src="aditya-gupta.jpg" alt="Aditya Gupta">
+        <h3>Aditya Gupta</h3>
+        <p>Aditya Gupta is a top-notch educator who achieved a remarkable rank of 100 in JEE Advanced, one of the most prestigious engineering entrance exams in India. With his expertise and dedication, he is here to guide you towards success in your academic journey.</p>
+    </div>
+</section>
+
+
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to contact us:</p>
+        <address>
+            Email: <a href="mailto:ag80860307@gmail.com">Aditya gupta</a><br>
+            Phone: <a href="tel:+917541090313">7451090313</a>
+        </address>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Course Sales Website</p>
+    </footer>
+</body>
+</html>
